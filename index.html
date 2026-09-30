@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un pequeño comienzo para un gran día... 🏎️</title>
+
+    <!-- Fuente e íconos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap">
+    
+    <!-- Archivo CSS local -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Librería Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <!-- Pantalla inicial -->
+    <div class="start-screen" id="startScreen" onclick="iniciar()">
+        <div class="start-btn-box">
+            <span class="car-icon">🏎️</span>
+            <div class="start-text">Toca para iniciar</div>
+            <div style="font-size: 30px; margin-top: 10px;">👆</div>
+        </div>
+    </div>
+
+    <!-- Título principal -->
+    <div class="title-container">
+        <h1 class="main-title">Un pequeño comienzo para un gran día... 🏎️✨</h1>
+    </div>
+
+    <!-- Contenedor del fondo 3D -->
+    <div id="canvas-container"></div>
+
+    <!-- Botón flotante para abrir la carta -->
+    <button class="card-btn" onclick="toggleModal(true)">💬</button>
+
+    <!-- Modal de la carta -->
+    <div class="modal" id="cardModal">
+        <div class="card-box">
+            <button class="close-btn" onclick="toggleModal(false)">✕</button>
+            <h3>Para ti Puuuki 💗</h3>
+            <p>Quizá antes no fui tan expresiva o detallista demostrándote todo lo que siento por ti, pero quiero que sepas que eso cambia desde aquel 07</p>
+            <p>A partir de ahora me encargaré de demostrártelo en cada detalle, porque te mereces todo lo bonito. ¡Se acabaron los días en los que solo eras espectador!</p>
+            <p>Esto que ves aquí es solo un pequeño comienzo de un gran día... Prepárate, porque lo mejor está por venir. ¡Te amo muchísimo! 🏎️💙✨</p>
+        </div>
+    </div>
+
+    <!-- Archivo JS local -->
+    <script src="script.js"></script>
+</body>
+</html>
